@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, user-scalable=no">
+
+    <title>Compra en línea, compra en Linio de forma segura</title>
+
+    <link rel="stylesheet" href="css/alice.css">
+
+</head>
+
+<body>
+    <header class="container-fluid">
+
+        <nav id="navbar" class="navbar navbar-light navbar-fixed-top bg-medium-body navbar-linio">
+            <div class="container-fluid container-semi-fluid header-container">
+                <div class="col-lg-1 col-sm-1 col-xs-2">
+                    <button class="navbar-toggler" type="button" id="open-left-menu">
+                        <div class="icon icon-margin">&#xE04B;</div>
+                        <div class="navbar-title hidden-md-down">Categorías</div>
+                    </button>
+                </div>
+
+
+                <div class="col-lg-9 col-md-8 col-sm-6 col-xs-4 primary-logo">
+                    <div class="header-logo">
+                        <a title="Linio" href="#" class="navbar-brand"></a>
+                    </div>
+
+
+                    <div class="search">
+                        <form action="#" method="get" data-search-category>
+                            <div class="input-group hidden-sm-down input-group-search">
+                                <div class="input-group-btn" data-search-categories-content="/ng/search-categories" id="search_categories_content" data-search-category-parent-id="0"></div>
+                                <div data-search-suggestions data-suggestion-limit="8">
+                                    <input type="search" name="q" placeholder="Busca productos" value="" autocomplete="off" class="form-control" autofocus maxlength="512">
+                                </div>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit" tabindex="-1"><span aria-hidden="true" class="icon icon-inverse">&#xE038;</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-5 col-xs-6 header-icons-row">
+                    <a class="col-sm-3 col-xs-4 quantity-icon-wrapper hidden-md-up"></a>
+                    <a href="#" class="col-md-4 col-sm-3 col-xs-4 hidden-xs-down quantity-icon-wrapper">
+                        <span class="icon icon-padding">&#xE020;</span>
+                    </a>
+                    <a href="#" class="col-md-4 col-sm-3 col-xs-4 quantity-icon-wrapper" data-dropdown-menu="user-menu" data-prevent-action="true">
+                        <span class="icon icon-padding">&#xE04A;</span>
+                    </a>
+                    <a href="#" class="col-md-4 col-sm-3 col-xs-4 quantity-icon-wrapper">
+                        <span class="icon icon-padding">&#xE011;</span>
+                        <span class="quantity-icon-placeholder" id="cart-counter"></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mobile-search hidden-md-up col-xs-12 bg-medium-body">
+                <div data-search-suggestions data-suggestion-limit="8" data-suggested-queries="Búsquedas populares">
+                    <form action="/search" method="get">
+                        <div class="input-group input-group-search">
+                            <input type="search" name="q" placeholder="Busca productos" value="" autocomplete="off" class="form-control" autofocus maxlength="512">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit" tabindex="-1"><span aria-hidden="true" class="icon icon-inverse">&#xE038;</span></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+        </nav>
+        <div class="mobile-menu offcanvas-left" id="left-menu">
+            <div class="mobile-menu-container">
+                <div class="user-not-logged row">
+                    <div class="col-xs-6">
+                        <a href="#" class="btn btn-primary btn-xsm col-xs-12">Iniciar Sesión</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="btn btn-default btn-xsm col-xs-12">Crear Cuenta</a>
+                    </div>
+                </div>
+
+                <div class="item-section">
+                    <a class="item-submenu last-item" href="#" data-offcanvas-menu="categories-menu">Categorías</a>
+                    <a class="item-link" href="#">Mi cuenta</a>
+                    <a class="item-link" href="#">Mis pedidos</a>
+                    <a class="item-link" href="#"><span>Solo Hoy</span></a>
+                    <a class="item-link" href="#"><span>Tarjeta Linio</span></a>
+                    <a class="item-link" href="#"><span>Club Premier</span></a>
+                    <a class="item-link" href="#"><span>Ayuda</span></a>
+                    <a class="item-link" href="#"><span>Mayoreo</span></a>
+                    <a class="item-link" href="#"><span>Linio Plus</span></a>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div data-lazy-menu="/ng/mobile-menu"></div>
+    </header>
+
+    <div class="loading-overlay hide" id="loader"></div>
+    <div class="dark-backdrop hide" id="backdrop"></div>
+    <div class="wrapper container-fluid">
+        <nav id="subheader-navbar" class="subheader-navbar hidden-lg-down">
+            <div class="container-fluid container-semi-fluid">
+                <div class="subheader-links-set">
+                    <a href="#">Solo Hoy</a>
+                    <a href="#">Tarjeta Linio</a>
+                    <a href="#">Club Premier</a>
+                    <a href="#">Ayuda</a>
+                    <a href="#">Mayoreo</a>
+                    <a href="#">Linio Plus</a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            var css = document.createElement('link');
+            css.rel = 'stylesheet';
+            css.href = 'https://assets.linio.com/css/alice-4e8abacb1a.lazy.css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+        });
+
+    </script>
+
+    <script type="text/javascript" src="js/core.js" defer></script>
+
+</body>
+
+</html>

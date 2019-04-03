@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Prototype">
+    <meta name="author" content="Omar Prieto">
+    <title>Linio prototype / detalle de producto</title>
+
+    <!--STYLES-->
+    <link href="css/alice.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav id="navbar" class="navbar navbar-light navbar-fixed-top bg-medium-body navbar-linio">
+            <div class="container-fluid container-semi-fluid header-container">
+
+                <!--SEARCHBAR-CATEGORIES-->
+                <div class="col-lg-1 col-sm-1 col-xs-2">
+                    <button class="navbar-toggler" type="button" id="open-left-menu">
+                        <div class="icon icon-margin"></div>
+                        <div class="navbar-title hidden-md-down">Categorías</div>
+                    </button>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-6 col-xs-4 primary-logo">
+                    <div class="header-logo"> <a title="Linio" href="#" class="navbar-brand"></a> </div>
+                    <div class="search">
+                        <form>
+                            <div class="input-group hidden-sm-down input-group-search">
+                                <div class="input-group-btn">
+                                    <select id="searchCategoryDropdown" class="form-control search-categories">
+                                        <option>Todas las categorías</option>
+                                        <option>Belleza</option>
+                                        <option>Celulares</option>
+                                        <option>Computación</option>
+                                        <option>Consolas y Videojuegos</option>
+                                        <option>Deportes</option>
+                                        <option>Electrodomésticos</option>
+                                        <option>Hogar</option>
+                                        <option>Juguetes, niños y bebés</option>
+                                        <option>Moda</option>
+                                        <option>Relojes y Accesorios</option>
+                                        <option>Salud y Bienestar</option>
+                                        <option>TV, Audio y Video</option>
+                                    </select>
+                                </div>
+                                <div data-search-suggestions="" data-suggestion-limit="8">
+                                    <input placeholder="Busca productos" class="form-control" maxlength="512">
+                                </div>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit" tabindex="-1"><span aria-hidden="true" class="icon icon-inverse"></span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/SEARCHBAR-CATEGORIES-->
+
+                <!--HEADER-ICONS-RIGHT-->
+                <div class="col-lg-2 col-md-3 col-sm-5 col-xs-6 header-icons-row">
+                    <a class="col-sm-3 col-xs-4 quantity-icon-wrapper hidden-md-up"></a>
+                    <a href="#" class="col-md-4 col-sm-3 col-xs-4 hidden-xs-down quantity-icon-wrapper">
+                        <span class="icon icon-padding"></span>
+                    </a> <a href="#" class="col-md-4 col-sm-3 col-xs-4 quantity-icon-wrapper" data-dropdown-menu="user-menu" data-prevent-action="true"> <span class="icon icon-padding"></span></a> <a href="#" class="col-md-4 col-sm-3 col-xs-4 quantity-icon-wrapper"> <span class="icon icon-padding"></span> <span class="quantity-icon-placeholder"></span> <span class="quantity-icon quantity-icon-notification">3</span> </a> </div>
+                <!--/HEADER-ICONS-RIGHT-->
+
+            </div>
+
+            <!--MOBILE SEARCH->
+            <div class="mobile-search hidden-md-up col-xs-12 bg-medium-body">
+                <div data-search-suggestions="" data-suggestion-limit="8" data-suggested-queries="Búsquedas populares">
+                    <form action="/search" method="get">
+                        <div class="input-group input-group-search">
+                            <input type="search" name="q" placeholder="Busca productos" value="" autocomplete="off" class="form-control" autofocus="" maxlength="512">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit" tabindex="0"><span aria-hidden="true" class="icon icon-inverse"></span></button>
+                            </span> </div>
+                    </form>
+                </div>
+            </div>
+            <!--/MOBILE SEARCH-->
+
+        </nav>
+    </header>
+    <div class="wrapper container-fluid">
+
+        <!--NAVIGATION-->
+        <nav id="subheader-navbar" class="subheader-navbar hidden-lg-down">
+            <div class="container-fluid container-semi-fluid">
+                <div class="subheader-links-set"> <a href="#">Solo Hoy</a> <a href="#">Tarjeta Linio</a> <a href="#">Club Premier</a> <a href="#">Ayuda</a> <a href="#">Mayoreo</a> <a href="#">Linio Plus</a> </div>
+            </div>
+        </nav>
+        <!--/NAVIGATION-->
+
+        <main class="container-fluid container-semi-fluid">
+
+            <!--BREADCRUMB-->
+            <ol class="breadcrumb" itemscope="" itemtype="#">
+                <li itemscope="" itemtype="#"> <a href="#" itemprop="item"><span itemprop="name">Inicio</span></a> </li>
+                <li itemscope="" itemtype="#"> <a href="#" itemprop="item"><span itemprop="name">Celulares y Tablets</span></a> </li>
+                <li itemscope="" itemtype="#"> <a href="#" itemprop="item"><span itemprop="name">Celulares y Smartphones</span></a> </li>
+                <li itemscope="" itemtype="#"> <a href="#" itemprop="item"><span itemprop="name">Desbloqueados</span></a> </li>
+                <li itemscope="" itemtype="#"> <span itemprop="name">Samsung Galaxy S9 Versión Latinoamérica 64GB-Titanium Gray Dual Sim, Libre de fábrica </span> </li>
+            </ol>
+            <!--/BREADCRUMB-->
+
+            <div class="product-detail row">
+                <!--FOTO-->
+                <div id="foto" class="col-md-7">
+
+                    <div class="wrapper">
+                        <div class="Gallery swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/502f2b6575d2c4456ace96ba833ba328-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/5d819a7e1bbcb47bd3073d651e62435d-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/40077d1824717324f2f08af9ac0dfd6c-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/6b848321f53bbd41440e2bca334d1853-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/6988a35c0f1b9c07bf925e67b69caf1f-zoom.jpg" /></div>
+                            </div>
+                        </div>
+                        <div class="Thumbs swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/502f2b6575d2c4456ace96ba833ba328-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/5d819a7e1bbcb47bd3073d651e62435d-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/40077d1824717324f2f08af9ac0dfd6c-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/6b848321f53bbd41440e2bca334d1853-zoom.jpg" /></div>
+                                <div class="swiper-slide"><img src="https://i.linio.com/p/6988a35c0f1b9c07bf925e67b69caf1f-zoom.jpg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Change <code>centeredSlides</code> to <code>false</code> in <code>galleryThumbs</code>, and navigation will be broken.</p>
+
+
+
+                    <div id="badges">
+                        <span class="badge"><span class="icon "></span>Reacondicionado</span>
+                        <span class="badge"><span class="icon"></span>Grandes dimensiones</span>
+                        <span class="badge"><span class="icon"></span>Envío internacional</span>
+                        <span class="badge"><span class="icon"></span>Garantía</span>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+                <!--/FOTO-->
+                <!--INFO-->
+                <div id="info" class="col-md-5">
+                    <div class="product-title col-xs-12">
+                        <h2><a class="brand link-lower" href="#">Samsung Electronics...</a> <a href="#" class="lighthouse"><img src="/assets/img/lighthouse.png"></a></h2>
+                        <h1 class=""> Samsung Galaxy S9+ Versión Latinoamérica 64GB-Titanium Gray...
+                            <!-- SIM Dual 4G, 3000 mAh, Android 8.1-->
+                        </h1>
+                        <div class="rating-content"> <span class="score">4.6</span>
+                            <span class="star-rating high-rating rating-product">
+                                <span class="icon icon-xsm active"></span>
+                                <span class="icon icon-xsm active"></span>
+                                <span class="icon icon-xsm active"></span>
+                                <span class="icon icon-xsm active"></span>
+                                <span class="icon icon-xsm disable"></span>
+                            </span>
+                            <span class="text text-bold text-base rate">123 Opiniones</span>
+                        </div>
+                        <!--<div class="product-subtitle"> <a class="link-lower" href="#">Más Desbloqueados de Samsung</a> </div>-->
+
+
+                        <div class="product-price-container option-container option-1 ">
+                            <span class="original-price">$99.9999</span>
+                            <span class="discount">- 88%</span>
+
+                            <div class="price price-main">
+                                <div class="lowest-price">
+                                    <span class="price-main">$23.000</span>
+                                    <div class="consumable-unit-price">
+                                        (g a $128,88)
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="price-promotional">$20.000</div>
+                                    <span class="sprite sprite-cmr"></span>
+                                </div>
+                            </div>
+                            <div class="special-payment-section">
+                                <span class="icon icon-md"></span>
+                                <span class="special-payment-name">Pagando con Tarjeta Linio</span>
+                                <div class="price price-deal">$19.000</div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="buy-information col-xs-12">
+                        <div class="product-price">
+                            <div id="item-shipping-estimate" class="item-shipping-estimate" value="" data-item-shipping-estimate="">
+                                <div id="item-shipping-estimate-content" class="valid"> <span id="item-shipping-estimate-icon" class="item-shipping-estimate-icon icon regular"></span>
+                                    <div id="item-shipping-estimate-title" class="item-shipping-estimate-title">Envío $39.00</div>
+                                    <div class="item-shipping-estimate-response"> <span id="item-shipping-estimate-message">Recíbelo del</span> <span id="item-shipping-estimate-date-time" class="item-shipping-estimate-date-time regular">24 de Noviembre al 12 de Diciembre</span> <span id="item-shipping-estimate-address" class="item-shipping-estimate-address">en Nezahualcoyotl, Estado de México, CP 57000</span>
+                                        <br><a href="#">Calcular envío en otra dirección</a>
+
+
+                                    </div>
+                                </div>
+
+                                <a href="#" target="_blank" class="link-sizes">
+                                    <span class="icon"></span>Ver guía de tallas</a>
+
+                            </div>
+
+                            <div class="product-bg-container product-general-info variation-info">
+
+
+                                <h4 class="variation-title">Opciones de producto</h4>
+
+                                <div class="product-options" id="product-options">
+                                    <input type="radio" id="option-1" name="product-option" data-product-option="#selected-option" data-option-id="option-1">
+                                    <label for="option-1" class="btn btn-sm btn-default-outline">SM</label>
+                                    <input type="radio" id="option-2" name="product-option" data-product-option="#selected-option" data-option-id="option-2">
+                                    <label for="option-2" class="btn btn-sm btn-default-outline">MD</label>
+                                    <input type="radio" id="option-3" name="product-option" data-product-option="#selected-option" data-option-id="option-3">
+                                    <label for="option-3" class="btn btn-sm btn-default-outline">LG</label>
+                                    <input type="radio" id="option-4" name="product-option" data-product-option="#selected-option" data-option-id="option-4">
+                                    <label for="option-4" class="btn btn-sm btn-default-outline">XL</label>
+                                    <input type="radio" id="option-5" name="product-option" data-product-option="#selected-option" data-option-id="option-5">
+                                    <label for="option-5" class="btn btn-sm btn-default-outline">XXL</label>
+                                    <input type="radio" id="option-6" name="product-option" data-product-option="#selected-option" data-option-id="option-6">
+                                    <label for="option-6" class="btn btn-sm btn-default-outline">XXXL</label>
+                                    <input type="radio" id="option-7" name="product-option" disabled>
+                                    <label for="option-7" class="btn btn-sm btn-default-outline btn-disabled">4XL</label>
+                                    <input type="radio" id="option-8" name="product-option" disabled>
+                                    <label for="option-8" class="btn btn-sm btn-default-outline btn-disabled">5XL TALL</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <button id="amount" class="btn btn-lg btn-secondary">1</button>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <!--<button class="btn btn-lg btn-secondary">Opciones</button>-->
+                                        <button class="btn btn-lg btn-primary-outline">Agregar</button></div>
+                                    <div class="col-lg-12">
+
+                                        <button class="btn btn-lg btn-primary">Comprar ahora</button>
+
+                                        <div class="seller-information">
+                                            <h4>Enviado y Vendido por:</h4>
+                                            <a href="#">Samsung electronics</a>
+                                            <div class="rating-content"> <span class="score">4.6</span>
+                                                <span class="star-rating high-rating rating-product" style="background:none;;">
+                                                    <span class="icon icon-xsm active" style="color: #45a00a"></span>
+                                                    <span class="icon icon-xsm active" style="color: #45a00a"></span>
+                                                    <span class="icon icon-xsm active" style="color: #45a00a"></span>
+                                                    <span class="icon icon-xsm active" style="color: #45a00a"></span>
+                                                    <span class="icon icon-xsm disable" style="color: #45a00a"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--INFORMATION-->
+            <div class="product-description-container row">
+                <p style="text-transform: uppercase; color: black;"><strong>Caracteristicas destacadas del producto</strong></p>
+                <div class="product-feature ">
+                    <div class="product-bg-container col-md-12">
+
+                        <ul>
+                            <li>Pantalla de 5.8 pulgadas Super AMOLED</li>
+                            <li>Resolución: 2,960 x 1,440 pixeles</li>
+                            <li>Sistema Operativo&nbsp;Android Oreo</li>
+                            <li>Procesador: Snapdragon 845 de ocho núcleos (cuatro de 2.8GHz y cuatro de 1.7GHz).</li>
+                            <!--
+                            <li>Memoria RAM de 4GB/ Almacenamiento: 64GB, expansible hasta 400GB.</li>
+                            <li>Cámara trasera de&nbsp;12 megapíxeles con estabilización de imagen óptica y apertura variable de f/1.5 a f/2.4 y cámara frontal de&nbsp;8 megapíxeles con apertura f/1.7</li>
+                            <li>Conectividad: Wi-Fi 802.11ac (2.4 y 5GHz) MU-MIMO, Bluetooth 5.0</li>
+                            <li>Ranura microSD.</li>
+                            <li>Batería: 3,000mAh (no removible).</li>
+                            <li>Quick Charge 2.0</li>
+                            <li>Carga inalámbrica</li>
+                            <li>Funciones de desbloqueo: Intelligent Scan, escáner de iris, reconocimiento facial, patrón, PIN y&nbsp;contraseña.</li>
+                            <li>Resistente al agua: IP68 (hasta 1.5 metros de profundidad por hasta 30 minutos).</li>
+                            <li>Samsung Pay solo está habilitado en EE.UU</li>
+-->
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="features-box-section col-md-12">
+                <p>Características</p>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>SKU</td>
+                            <td itemprop="sku">SA291EL06599GLMX</td>
+                        </tr>
+
+                        <tr>
+                            <td>Modelo</td>
+                            <td>S9</td>
+                        </tr>
+                        <tr>
+                            <td>Tamaño (L x P x A cm)</td>
+                            <td>14.7x6.9x0.9</td>
+                        </tr>
+                        <tr>
+                            <td>Peso (kg)</td>
+                            <td>0.16</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>gris</td>
+                        </tr>
+                        <tr>
+                            <td>Garantía del producto</td>
+                            <td>90 días sobre defectos de fabricación directamente con el vendedor (no aplica en equipos rayados, mojados, intervenidos, rotos y/o se hayan utilizado en condiciones distintas a las especificadas en el manual de usuario)</td>
+                        </tr>
+                        <tr>
+                            <td>Condición del producto</td>
+                            <td>Nuevo</td>
+                        </tr>
+                        <tr>
+                            <td>Detalle condición física del producto</td>
+                            <td>nuevo sellado</td>
+                        </tr>
+                        <tr>
+                            <td>Tamaño de la pantalla (pulg)</td>
+                            <td>5.8</td>
+                        </tr>
+                        <tr>
+                            <td>Megapixeles</td>
+                            <td>12.0</td>
+                        </tr>
+                        <tr>
+                            <td>Sistema operativo</td>
+                            <td>Android</td>
+                        </tr>
+                        <tr>
+                            <td>Capacidad</td>
+                            <td>64 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Memoria RAM</td>
+                            <td>4 GB</td>
+                        </tr>
+
+                        <tr>
+                            <td>Garantía de producto en meses</td>
+                            <td>3</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <h2>Qué hay en la caja</h2><br>
+                <ul>
+                    <li>Samsung Galaxy S9</li>
+                    <li>Cargador para Latinoamerica</li>
+                    <li>Cable de carga.</li>
+                    <li>Conector USB tipo C.</li>
+                    <li>Audífonos alámbricos AKG.</li>
+                </ul>
+
+            </div>
+
+        </main>
+
+        <footer> </footer>
+    </div>
+
+    <script type="text/javascript" src="https://assets.linio.com/js/core-3778dac89b.js" defer></script>
+    <script>
+        var galleryTop = new Swiper('.Gallery', {
+            direction: 'vertical',
+            spaceBetween: 10,
+        })
+        var galleryThumbs = new Swiper('.Thumbs', {
+            direction: 'vertical',
+            spaceBetween: 10,
+            // loop: true, bug too
+            centeredSlides: true,
+            slidesPerView: 5,
+            touchRatio: 0.2,
+            slideToClickedSlide: true
+        })
+        galleryTop.params.control = galleryThumbs
+        galleryThumbs.params.control = galleryTop
+
+    </script>
+
+</body>
+
+</html>

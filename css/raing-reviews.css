@@ -1,0 +1,170 @@
+/*! CSS Used from: https://assets.linio.com/css/alice-021541b492.css */
+progress{display:inline-block;vertical-align:baseline;}
+button,input,textarea{color:inherit;font:inherit;margin:0;}
+button{overflow:visible;}
+button{text-transform:none;}
+button{-webkit-appearance:button;cursor:pointer;}
+button[disabled]{cursor:default;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+input{line-height:normal;}
+textarea{overflow:auto;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+.product-review-container .review-subtitle p,.product-review-container>p,h3,p{orphans:3;widows:3;}
+.product-review-container .review-subtitle p,.product-review-container>p,h3{page-break-after:avoid;}
+}
+*,::after,::before{box-sizing:inherit;}
+.product-review-container .review-subtitle p,.product-review-container>p,h3{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+button,input,textarea{-ms-touch-action:manipulation;touch-action:manipulation;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button,input,textarea{margin:0;line-height:inherit;border-radius:0;}
+textarea{resize:vertical;}
+.row{margin-left:-4px;margin-right:-4px;}
+.row::after{content:"";display:table;clear:both;}
+.col-lg-10,.col-lg-12,.col-lg-5,.col-lg-7,.col-md-12,.col-md-6,.col-md-8,.col-xl-4,.col-xl-7,.col-xl-8,.col-xs-12{position:relative;min-height:1px;padding-left:4px;padding-right:4px;}
+.col-xs-12{float:left;}
+.col-xs-12{width:100%;}
+@media (min-width:768px){
+.col-md-12,.col-md-6,.col-md-8{float:left;}
+.col-md-6{width:50%;}
+.col-md-8{width:66.66667%;}
+.col-md-12{width:100%;}
+}
+@media (min-width:992px){
+.col-lg-10,.col-lg-12,.col-lg-5,.col-lg-7{float:left;}
+.col-lg-5{width:41.66667%;}
+.col-lg-7{width:58.33333%;}
+.col-lg-10{width:83.33333%;}
+.col-lg-12{width:100%;}
+}
+@media (min-width:1180px){
+.col-xl-4,.col-xl-7,.col-xl-8{float:left;}
+.col-xl-4{width:33.33333%;}
+.col-xl-7{width:58.33333%;}
+.col-xl-8{width:66.66667%;}
+}
+.form-control{display:block;width:100%;padding:8px 8px;font-size:1rem;line-height:1.5;color:#666;background-color:#f7f7f7;background-image:none;border:1px solid #ccc;border-radius:3px;}
+.form-control::-ms-expand{background-color:transparent;border:0;}
+.form-control:focus{border-color:#939393;outline:0;}
+.form-control::-webkit-input-placeholder{color:#939393;opacity:1;}
+.form-control::-moz-placeholder{color:#939393;opacity:1;}
+.form-control::-ms-input-placeholder{color:#939393;opacity:1;}
+.form-control::placeholder{color:#939393;opacity:1;}
+.form-control:disabled{background-color:#eceeef;opacity:1;}
+.form-control:disabled{cursor:not-allowed;}
+.form-control-sm{padding:0 8px;font-size:.875rem;line-height:1.5;border-radius:3px;}
+.form-control-lg{padding:8px 8px;font-size:1.25rem;line-height:1.33333;border-radius:3px;}
+.btn{display:inline-block;font-weight:700;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:8px 8px;font-size:1rem;line-height:1.5;border-radius:.25rem;}
+.btn:active:focus,.btn:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+.btn:focus,.btn:hover{text-decoration:none;}
+.btn:active{background-image:none;outline:0;}
+.btn:disabled{cursor:not-allowed;opacity:.65;}
+.text-uppercase{text-transform:uppercase!important;}
+.progress{display:block;width:100%;height:1rem;margin-bottom:1rem;}
+.progress[value]{color:#0074d9;border:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+@media screen and (min-width:0\0){
+.progress{background-color:#eee;border-radius:.25rem;}
+}
+.product-review-container .review-subtitle p,.product-review-container>p,div,form,h3,input,p,textarea{margin:0;padding:0;}
+.product-review-container .review-subtitle p,.product-review-container>p,h3{font-size:100%;font-weight:400;}
+input,textarea{font-family:inherit;font-size:inherit;font-weight:inherit;}
+.btn{font-size:18px;text-transform:uppercase;height:40px;}
+.btn.btn-default{color:#fff;background-color:#333;border-color:#333;}
+.btn.btn-default:hover{color:#fff;background-color:#1a1a1a;border-color:#141414;}
+.btn.btn-default:focus{color:#fff;background-color:#1a1a1a;border-color:#141414;}
+.btn.btn-default:active{color:#fff;background-color:#1a1a1a;border-color:#141414;background-image:none;}
+.btn.btn-default:active:focus,.btn.btn-default:active:hover{color:#fff;background-color:#080808;border-color:#000;}
+.btn.btn-default:disabled:focus{background-color:#333;border-color:#333;}
+.btn.btn-default:disabled:hover{background-color:#333;border-color:#333;}
+button:focus{outline:0;box-shadow:none;border-color:transparent;}
+.form-control{font-family:"Function Pro","Helvetica Neue",Arial,sans-serif;height:40px;margin-top:6px;margin-bottom:18px;}
+.form-control:focus{border-color:#939393;outline:0;}
+.form-control:focus{background-color:#fff;}
+.form-control-sm{height:32px;padding:0 8px;font-size:1rem;}
+.form-control-lg{height:52px;font-size:18px;}
+textarea.form-control{height:initial;}
+p{font-family:"Helvetica Neue","Segoe UI",Lucida,Noto,Roboto,Arial,sans-serif;font-size:12px;}
+.product-review-container .review-subtitle p,.product-review-container>p,h3{font-family:"Function Pro","Helvetica Neue",Arial,sans-serif;color:#333;line-height:20px;margin-bottom:0;font-weight:700;}
+.product-review-container .review-subtitle p,.product-review-container>p{font-size:20px;}
+h3{font-size:18px;}
+.icon{font-family:"Linio Icon Set";color:#666;display:inline-block;line-height:1;font-weight:400;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+.icon.icon-md{font-size:32px;}
+.icon.icon-sm{font-size:24px;}
+.icon.icon-xsm{font-size:16px;}
+.icon-low-rating:before{content:"";}
+.icon-high-rating:before{content:"";}
+.star-rating{word-spacing:-.25em;margin-left:-4px;}
+.star-rating .icon{color:#ccc;position:relative;top:3px;}
+.star-rating .active{color:#ffd000;}
+.star-rating.high-rating .active{color:#45a00a;}
+.star-rating-description{display:inline-block;vertical-align:top;margin-top:10px;margin-left:8px;word-spacing:0;}
+.star-rating-description .low-rating{color:#ea2840;}
+.star-rating-description .low-rating .icon{color:#ea2840;}
+.star-rating-description .mid-rating{color:#666;}
+.star-rating-description .mid-rating .icon{color:#666;}
+.star-rating-description .high-rating{color:#45a00a;}
+.star-rating-description .high-rating .icon{color:#45a00a;}
+.star-rating-description .icon{position:absolute;top:-3px;right:0;}
+.star-rating-description .high-rating,.star-rating-description .low-rating,.star-rating-description .mid-rating{display:none;padding-right:28px;position:relative;}
+.chart .chart-progress{display:inline-block;height:16px;padding:6px 0;}
+.chart .chart-progress:first-child{padding-top:0;}
+.chart .chart-progress>span{position:relative;top:-3px;}
+.chart .chart-progress>span:first-child{display:inline-block;width:35px;}
+.chart .chart-progress .icon{top:2px;position:relative;}
+.chart .chart-progress .high-rating{color:#45a00a;}
+.chart .chart-progress .mid-rating{color:#ffd000;}
+.chart .chart-progress .low-rating{color:#ea2840;}
+.chart .progress{display:inline-block;height:16px;margin:0 8px;margin-top:3px;width:280px;}
+@media screen and (max-width:544px){
+.chart .progress{width:200px;}
+}
+.chart .progress[value]{color:#ffd000;}
+.review-item{padding-top:22px;padding-bottom:32px;}
+.review-item:not(:last-of-type){border-bottom:1px solid #ccc;}
+.review-item .star-rating{display:inline-block;margin-bottom:8px;}
+.review-item h3{display:inline-block;margin-left:4px;margin-bottom:8px;}
+.review-item .review-verified-badges{margin-bottom:20px;font-size:14px;font-family:"Function Pro","Helvetica Neue",Arial,sans-serif;font-weight:700;}
+.review-item .review-verified-badges .review-verified-customer{color:#45a00a;}
+.review-item .review-verified-badges .review-verified-purchase{color:#f50;}
+.review-header{border-bottom:1px solid #ccc;padding:12px 0;}
+.review-form{padding-top:24px;}
+.review-form .review-form-rate{padding:20px 0 20px;}
+.review-form .review-form-rate .icon{cursor:pointer;}
+.review-form .review-form-label .optional-label{float:right;font-weight:lighter;font-style:italic;}
+.review-form .form-control{margin-bottom:12px;}
+.review-form .review-button{padding-top:24px;}
+.form-control-lg.comment-box{font-size:14px;}
+.product-review-container{margin:0;padding-top:32px;padding-bottom:40px;}
+@media screen and (max-width:767px){
+.product-review-container{padding-top:16px;background:#fff;margin-bottom:20px;border-bottom:0;}
+}
+.product-review-container>p{margin-bottom:24px;text-transform:uppercase;}
+.product-review-container .review-subtitle p{display:inline-block;}
+@media screen and (min-width:768px) and (max-width:991px){
+.product-review-container .chart-container{float:right;width:50%;}
+}
+.product-review-container .chart-container .chart-count{margin-top:12px;margin-bottom:20px;padding-bottom:22px;border-bottom:1px solid #ccc;width:100%;float:left;}
+@media screen and (min-width:768px) and (max-width:991px){
+.product-review-container .chart-container .chart-count{position:absolute;left:-100%;top:30px;margin:0;border-bottom:0;}
+}
+@media screen and (max-width:767px){
+.product-review-container .chart-container .chart-count{border-bottom:0;}
+}
+@media screen and (max-width:991px){
+.product-review-container .chart-container .chart{padding-bottom:16px;}
+}
+.product-review-container .review-container{padding-left:0;padding-right:0;}
+@media screen and (min-width:768px) and (max-width:991px){
+.product-review-container .review-container{border-top:1px solid #ccc;}
+}
+.product-review-container .review-container .review-header{width:100%;float:right;padding-top:27px;padding-bottom:27px;}
+@media screen and (max-width:767px){
+.product-review-container .review-container .review-header{display:none;}
+}
+.progress{margin-top:8px;margin-bottom:32px;height:12px;border-radius:10px;}
+.form-control{border:1px solid #ccc;color:#333;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Function Pro';font-weight:700;src:url(https://assets.linio.com/assets/fonts/FunctionPro-Book-d83aa93e75.woff2) format("woff2"),url(https://assets.linio.com/assets/fonts/FunctionPro-Book-83438b6289.woff) format("woff"),url(https://assets.linio.com/assets/fonts/FunctionPro-Book-39b4ce04b5.otf) format("opentype");}
+@font-face{font-family:'Function Pro';font-weight:400;src:url(https://assets.linio.com/assets/fonts/FunctionPro-Light-c71b546be2.woff2) format("woff2"),url(https://assets.linio.com/assets/fonts/FunctionPro-Light-15adf5ca00.woff) format("woff"),url(https://assets.linio.com/assets/fonts/FunctionPro-Light-91193084e9.otf) format("opentype");}
+@font-face{font-family:'Linio Icon Set';font-weight:400;src:url(https://assets.linio.com/assets/fonts/iconfont-bab26d982d.woff2) format("woff2"),url(https://assets.linio.com/assets/fonts/iconfont-e775d41103.woff) format("woff"),url(https://assets.linio.com/assets/fonts/iconfont-84fc43838c.ttf) format("opentype");}
