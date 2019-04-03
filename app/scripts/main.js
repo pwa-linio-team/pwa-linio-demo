@@ -38,9 +38,6 @@ import {hasPrerequisites} from 'features';
       )
     );
 
-  // Register the service worker
-  // TODO
-
   // Initialize app
   let app = new App();
   document.addEventListener('DOMContentLoaded', () => {

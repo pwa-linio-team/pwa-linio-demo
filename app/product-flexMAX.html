@@ -651,18 +651,15 @@
         </div>
     </div>
 
-</body>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script>
-    $('#exampleModalCenter').on('shown.bs.modal', function() {
-        $('#myInput').trigger('focus')
-    })
-
-</script>
-<script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script>
+      $('#exampleModalCenter').on('shown.bs.modal', function() {
+          $('#myInput').trigger('focus')
+      })
+  </script>
+  <script>
     $(document).ready(function() {
         $('.minus').click(function() {
             var $input = $(this).parent().find('input');
@@ -679,9 +676,8 @@
             return false;
         });
     });
-
-</script>
-<script>
+  </script>
+  <script>
     $('.expand-button').on('click', function() {
         $('.special-text').toggleClass('-expanded');
 
@@ -691,9 +687,8 @@
             $('.expand-button').html('...ver más [+]');
         }
     });
-
-</script>
-<script>
+  </script>
+  <script>
     $(document).ready(function() {
         $('[data-toggle="popover"]').popover({
             placement: 'bottom',
@@ -701,7 +696,16 @@
             width: '500px'
         });
     });
+  </script>
+    <script type="module">
+      import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
 
-</script>
+      if ('serviceWorker' in navigator) {
+        const wb = new Workbox('/sw.js');
 
+        wb.register();
+      }
+    </script>
+  <script src="/scripts/main.js"></script>
+</body>
 </html>
