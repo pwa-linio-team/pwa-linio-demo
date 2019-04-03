@@ -4,7 +4,7 @@
   "description": "A test using pwa technologies from Google to improve performance for Linio.",
   "lang": "es-ES",
   "start_url": "/index.html?utm_source=homescreen",
-  "scope": "https://pwa-linio-team.github.io/pwa-linio-demo/app/",
+  "scope": "/pwa-linio-demo/app/",
   "display": "standalone",
   "theme_color": "#f50",
   "icons": [
