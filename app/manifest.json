@@ -1,0 +1,33 @@
+{
+  "name": "PWA Linio Store",
+  "short_name": "PWA Linio",
+  "description": "A test using pwa technologies from Google to improve performance for Linio.",
+  "lang": "es-ES",
+  "start_url": "/pwa-linio-demo/app/index.html",
+  "scope": "pwa-linio-demo/app/*.html",
+  "display": "standalone",
+  "theme_color": "#f50",
+  "icons": [
+    {
+      "src": "icon-128x128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "ms-touch-icon-144x144-precomposed.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "chrome-touch-icon-192x192",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512x512",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#fff"
+}

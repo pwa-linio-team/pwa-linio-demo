@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="es-MX">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="PWS Linio">
     <meta name="description" content="Prototype">
-    <meta name="author" content="Omar Prieto">
+    <meta name="author" content="Linio FES Team">
     <title>Linio prototype / detalle de producto</title>
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="PWA Linio">
+    <meta name="apple-mobile-web-app-title" content="PWA Linio">
+    <meta name="theme-color" content="#f50">
+    <meta name="msapplication-navbutton-color" content="#f50">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/pwa-linio-demo/app/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" sizes="128x128" href="icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="icon-128x128.png">
+    <link rel="icon" sizes="152x152" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
+    <link rel="icon" sizes="144x144" href="ms-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ms-touch-icon-144x144-precomposed.png">
+    <link rel="icon" sizes="192x192" href="chrome-touch-icon-192x192">
+    <link rel="apple-touch-icon" sizes="192x192" href="chrome-touch-icon-192x192">
+    <link rel="icon" sizes="512x512" href="icon-512x512">
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512x512">
 
     <!--STYLES-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link href="styles/style-flex.css" rel="stylesheet">
-
 </head>
-
 <body>
     <header class="container-fluid">
         <nav id="navbar" class="navbar navbar-light navbar-fixed-top bg-medium-body navbar-linio">
@@ -351,7 +371,6 @@
 
         </main>
 
-
         <section class="container-fluid container-semi-fluid">
             <nav class="tabs-desktop">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -512,9 +531,6 @@
 
         </section>
 
-
-
-
         <section class="container-fluid container-semi-fluid">
 
             <div class="row contanier usp-container product-bg-container col-xl-12 col-xs-12">
@@ -558,11 +574,8 @@
 
         </section>
 
-
-
         <footer> </footer>
     </div>
-
 
     <!-- ModalShippingfee -->
     <div class="modal fade modalfull" id="shippingFee" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -651,34 +664,34 @@
         </div>
     </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script>
-      $('#exampleModalCenter').on('shown.bs.modal', function() {
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+        $('#exampleModalCenter').on('shown.bs.modal', function() {
           $('#myInput').trigger('focus')
       })
-  </script>
-  <script>
-    $(document).ready(function() {
-        $('.minus').click(function() {
-            var $input = $(this).parent().find('input');
-            var count = parseInt($input.val()) - 1;
-            count = count < 1 ? 1 : count;
-            $input.val(count);
-            $input.change();
-            return false;
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.minus').click(function() {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            $('.plus').click(function() {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+            });
         });
-        $('.plus').click(function() {
-            var $input = $(this).parent().find('input');
-            $input.val(parseInt($input.val()) + 1);
-            $input.change();
-            return false;
-        });
-    });
-  </script>
-  <script>
-    $('.expand-button').on('click', function() {
+    </script>
+    <script>
+        $('.expand-button').on('click', function() {
         $('.special-text').toggleClass('-expanded');
 
         if ($('.special-text').hasClass('-expanded')) {
@@ -687,25 +700,25 @@
             $('.expand-button').html('...ver más [+]');
         }
     });
-  </script>
-  <script>
-    $(document).ready(function() {
-        $('[data-toggle="popover"]').popover({
-            placement: 'bottom',
-            trigger: 'hover',
-            width: '500px'
-        });
-    });
-  </script>
-    <script type="module">
-      import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
-
-      if ('serviceWorker' in navigator) {
-        const wb = new Workbox('/sw.js');
-
-        wb.register();
-      }
     </script>
-  <script src="/scripts/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover({
+                placement: 'bottom',
+                trigger: 'hover',
+                width: '500px'
+            });
+        });
+    </script>
+    <script type="module">
+        import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+
+        if ('serviceWorker' in navigator) {
+            const wb = new Workbox('/sw.js');
+
+            wb.register();
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
 </body>
 </html>
