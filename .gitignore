@@ -9,3 +9,5 @@ dist/
 
 .tmp
 app.yaml
+.DS_Store
+.idea/workspace.xml
