@@ -38,35 +38,41 @@ import source from 'vinyl-source-stream';
 import browserSync from 'browser-sync';
 import nodemon from 'gulp-nodemon';
 import gulpLoadPlugins from 'gulp-load-plugins';
+import workboxBuild from 'workbox-build';
 
 const $ = gulpLoadPlugins();
 const bs = browserSync.create();
 
 // Write a task that injects a precache manifest into the service worker
-// TODO
+function buildServiceWorker() {
+  return workboxBuild.injectManifest({
+    swSrc: 'app/sw.js',
+    swDest: 'dist/sw.js',
+    globDirectory: 'dist',
+    globPatterns: [
+      'index.html',
+      'product-flexMAX.html',
+      '**\/*.{js,css,png,svg}'
+    ]
+  }).catch(err => {
+    console.log('Where is your God now? 😬', err);
+  });
+}
+
+gulp.task('buildServiceWorker', buildServiceWorker);
 
 // Optimize images
 function images() {
-  return gulp.src('app/images/**/*')
+  return gulp.src('app/assets/img/**/*')
     .pipe($.imagemin({ // DEBUG removed $.cache( before imagemin
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('dist/assets/img'))
     .pipe($.size({ title: 'images' }));
 }
 
-function thirdPartyImages() {
-  return gulp.src('../third_party/images/**/*')
-    .pipe($.imagemin({ // DEBUG removed $.cache( before imagemin
-      progressive: true,
-      interlaced: true
-    }))
-    .pipe(gulp.dest('dist/images'))
-    .pipe($.size({ title: 'product images' }));
-}
-
-gulp.task('images', gulp.parallel(images, thirdPartyImages));
+gulp.task('images', gulp.parallel(images));
 
 // Copy all files at the root level (app)
 function copy() {
@@ -185,13 +191,12 @@ function serve() {
 }
 
 // Build production files, the default task
-gulp.task(
-  'default',
+gulp.task('default',
   gulp.series(
     'clean',
     styles,
-    gulp.parallel(html, scripts, 'images', copy)
-    // TODO - Add the build-sw task here
+    gulp.parallel(html, scripts, 'images', copy),
+    buildServiceWorker
   )
 );
 
