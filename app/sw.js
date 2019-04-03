@@ -39,9 +39,37 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  /^https\:\/\/(?:pwa-linio-team\.github\.io|code\.jquery\.com|cdnjs\.cloudflare\.com|stackpath\.bootstrapcdn\.com|linio\.com)\/(.*)$/,
+  /^https\:\/\/pwa-linio-team\.github\.io\/(.*)$/,
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'site-resources',
+  })
+);
+
+workbox.routing.registerRoute(
+  /^https\:\/\/code\.jquery\.com\/(.*)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'jquery-resources',
+  })
+);
+
+workbox.routing.registerRoute(
+  /^https\:\/\/cdnjs\.cloudflare\.com\/(.*)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'cloudflare-resources',
+  })
+);
+
+workbox.routing.registerRoute(
+  /^https\:\/\/stackpath\.bootstrapcdn\.com\/(.*)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'bootstrapcdn-resources',
+  })
+);
+
+workbox.routing.registerRoute(
+  /^https\:\/\/i\.linio\.com\/(.*)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'linio-resources',
   })
 );
 
