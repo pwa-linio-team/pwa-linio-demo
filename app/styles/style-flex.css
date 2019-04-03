@@ -418,7 +418,7 @@ select {
     right: 40px;
     height: 40px;
     width: 40px;
-    background-image: url(/app/assets/img/radio-card-selected.svg);
+    background-image: url(../assets/img/radio-card-selected.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer
@@ -1219,7 +1219,7 @@ select.form-control {
     background-size: initial;
     background-repeat: no-repeat;
     background-position: center right 4px;
-    background-image: url(/app/assets/img/arrow-down.svg);
+    background-image: url(../assets/img/arrow-down.svg);
 }
 
 select::-ms-expand {
@@ -2577,7 +2577,7 @@ html {
 }
 
 .sprite-cmr {
-    background-image: url(/app/assets/img/sprites.png);
+    background-image: url(../assets/img/sprites.png);
     background-position: -367px -304px;
     width: 68px;
     height: 24px;

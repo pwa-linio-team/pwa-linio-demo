@@ -19,7 +19,6 @@
 /* eslint-env browser */
 // jshint esversion: 6
 
-import App from 'app';
 import {hasPrerequisites} from 'features';
 
 (() => {
@@ -39,13 +38,10 @@ import {hasPrerequisites} from 'features';
     );
 
   // Initialize app
-  let app = new App();
   document.addEventListener('DOMContentLoaded', () => {
     if (!hasPrerequisites()) {
       window.alert('This browser is missing some required features');
       return;
     }
-    app.install();
-    app.run();
   });
 })();

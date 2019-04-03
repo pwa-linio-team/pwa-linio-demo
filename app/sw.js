@@ -39,7 +39,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  /^https\:\/\/(?:pwa-linio-team.github\.io|code.jquery\.com|cdnjs.cloudflare\.com|stackpath.bootstrapcdn\.com)\/(.*)$/,
+  /^https\:\/\/(?:pwa-linio-team\.github\.io|code\.jquery\.com|cdnjs\.cloudflare\.com|stackpath\.bootstrapcdn\.com|linio\.com)\/(.*)$/,
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'site-resources',
   })
