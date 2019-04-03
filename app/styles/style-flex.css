@@ -3316,3 +3316,25 @@ img {
         display: block;
     }
 }
+
+
+
+.offline .testMessage {
+    padding: 20px 40px;
+    background-color: lightgray;
+    font-size: 15px;
+    position: fixed;
+    font-weight: bold;
+    z-index: 6000;
+    width: 100%;
+    top: 56px;
+    left: 0;
+}
+
+.offline .test-price {
+    display: none !important;
+}
+
+.offline .test-CTA-button {
+    display: none !important;
+}

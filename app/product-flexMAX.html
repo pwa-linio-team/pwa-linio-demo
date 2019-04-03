@@ -247,7 +247,7 @@
                         <!--<div class="product-subtitle"> <a class="link-lower" href="#">Más Desbloqueados de Samsung</a> </div>-->
 
 
-                        <div class="col-xs-1">
+                        <div class="col-xs-1 test-price">
                             <!--
                             <div class="select-price" data-toggle="modal" data-target="#modalPrices">
                                 <div>
@@ -335,7 +335,7 @@
                                     <label for="option-8" class="btn btn-sm btn-default-outline btn-disabled">5XL TALL</label>
                                 </div>
 
-                                <div class="row ">
+                                <div class="row test-CTA-button">
                                     <div class="col-xs-4">
                                         <div class="number">
                                             <span class="minus">-</span>
@@ -720,5 +720,20 @@
         }
     </script>
     <script src="scripts/main.min.js"></script>
+
+
+
+
+    <script type="text/javascript" src="https://assets.linio.com/js/core-a8134cdb35.js" defer></script>
+
+
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            if (!navigator.onLine) {
+                var bodyElement = document.getElementsByTagName('body');
+                bodyElement.classList.add('offline');
+            }
+        });
+</script>
 </body>
 </html>
