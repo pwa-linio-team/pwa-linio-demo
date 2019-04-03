@@ -74,6 +74,13 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
+  /^https\:\/\/assets\.linio\.com\/(.*)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'assets-linio-resources',
+  })
+);
+
+workbox.routing.registerRoute(
   /.*(?:googleapis|gstatic)\.com/,
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'google-resources',
