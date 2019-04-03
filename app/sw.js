@@ -14,46 +14,40 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js');
-
-workbox.skipWaiting();
-workbox.clientsClaim();
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.1.1/workbox-sw.js');
 
 workbox.precaching.precacheAndRoute([]);
 
-workbox.routing.registerRoute(/images\/products\/(.*)$/,
-  workbox.strategies.cacheFirst({
-    cacheName: 'furniture-store-images',
+workbox.routing.registerRoute(
+  /\.(?:png|gif|jpg|jpeg|svg)$/,
+  new workbox.strategies.CacheFirst({
+    cacheName: 'images',
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 10,
-        maxAgeSeconds: 7 * 24 * 60 * 60 // one week
-      })
-    ]
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
   })
 );
 
 workbox.routing.registerRoute(
-  new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
-  workbox.strategies.staleWhileRevalidate({
-    cacheName: 'furniture-store-fonts',
-    plugins: [
-      new workbox.expiration.Plugin({
-        maxAgeSeconds: 7 * 24 * 60 * 60 // one week
-      })
-    ]
+  /\.(?:js|css)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'static-resources',
   })
 );
 
 workbox.routing.registerRoute(
-  new RegExp ('https://code.getmdl.io/(.*)'),
-  workbox.strategies.staleWhileRevalidate({
-    cacheName: 'furniture-store-mdl',
-    plugins: [
-      new workbox.expiration.Plugin({
-        maxAgeSeconds: 7 * 24 * 60 * 60 // one week
-      })
-    ]
+  /^https\:\/\/(?:pwa-linio-team.github\.io|code.jquery\.com|cdnjs.cloudflare\.com|stackpath.bootstrapcdn\.com)\/(.*)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'site-resources',
   })
 );
 
+workbox.routing.registerRoute(
+  /.*(?:googleapis|gstatic)\.com/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'google-resources',
+  }),
+);
