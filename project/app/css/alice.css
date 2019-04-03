@@ -2331,7 +2331,7 @@ input[type=radio]:disabled {
 }
 
 .has-success .form-control-success {
-    background-image: url(/assets/images/svgIcons/input-ok.svg)
+    background-image: url(/project/app/assets/images/svgIcons/input-ok.svg)
 }
 
 .has-warning .checkbox,
@@ -6220,7 +6220,7 @@ select.form-control {
     background-size: initial;
     background-repeat: no-repeat;
     background-position: center right 4px;
-    background-image: url(/assets/img/arrow-down.svg)
+    background-image: url(/project/app/assets/img/arrow-down.svg)
 }
 
 .input-group-lg > .input-group-btn > select.form-control.btn,
@@ -6231,7 +6231,7 @@ select.form-control.form-control-lg {
 
 select.form-control.form-control-error,
 select.form-control.ng-dirty.ng-invalid {
-    background-image: url(/assets/images/svgIcons/arrow-down-error.svg)
+    background-image: url(/project/app/assets/images/svgIcons/arrow-down-error.svg)
 }
 
 .input-group-lg > .input-group-btn > select.form-control.form-control-error.btn,
@@ -6258,7 +6258,7 @@ select::-ms-expand {
 
 .form-control.input-search {
     padding-left: 38px;
-    background-image: url(/assets/images/svgIcons/search.svg);
+    background-image: url(/project/app/assets/images/svgIcons/search.svg);
     background-size: initial;
     background-repeat: no-repeat;
     background-position: center left 5px
@@ -6281,7 +6281,7 @@ select::-ms-expand {
 
 .form-control.form-control-success:not(select):not(.ng-empty):not(.form-control-error),
 .form-control.ng-valid:not(select):not(.ng-empty):not(.form-control-error) {
-    background-image: url(/assets/images/svgIcons/input-ok.svg)
+    background-image: url(/project/app/assets/images/svgIcons/input-ok.svg)
 }
 
 .form-control.form-control-error,
@@ -6389,7 +6389,7 @@ input[type=radio].form-control {
 
 input[type=radio].form-control + label {
     display: inline-block;
-    background-image: url(/assets/images/svgIcons/radio.svg);
+    background-image: url(/project/app/assets/images/svgIcons/radio.svg);
     background-repeat: no-repeat;
     cursor: pointer;
     padding-left: 28px;
@@ -6399,7 +6399,7 @@ input[type=radio].form-control + label {
 }
 
 input[type=radio].form-control:checked + label {
-    background-image: url(/assets/images/svgIcons/radio-selected.svg)
+    background-image: url(/project/app/assets/images/svgIcons/radio-selected.svg)
 }
 
 input[type=radio].form-control:disabled + label {
@@ -9089,7 +9089,7 @@ ol li {
 }
 
 .filters .filter-color-bullet.multicolor {
-    background-image: url(/assets/images/svgIcons/multicolor.svg)
+    background-image: url(/project/app/assets/images/svgIcons/multicolor.svg)
 }
 
 .filters-counter {
@@ -9494,7 +9494,7 @@ ol li {
 }
 
 .loading-overlay-webpay-icon {
-    background: rgba(255, 255, 255, .6) url(/assets/images/loaders/loader-transbank.png) repeat
+    background: rgba(255, 255, 255, .6) url(/project/app/assets/images/loaders/loader-transbank.png) repeat
 }
 
 .show {
@@ -20589,7 +20589,7 @@ a.bg-medium-body-dark:hover {
 }
 
 .shipping-option-item label {
-    background-image: url(/assets/images/svgIcons/radio.svg);
+    background-image: url(/project/app/assets/images/svgIcons/radio.svg);
     background-repeat: no-repeat;
     background-position: 4px;
     background-size: 32px;
@@ -20608,7 +20608,7 @@ a.bg-medium-body-dark:hover {
 }
 
 .shipping-option-item input[type=radio]:checked + label {
-    background-image: url(/assets/images/svgIcons/radio-card-selected.svg);
+    background-image: url(/project/app/assets/images/svgIcons/radio-card-selected.svg);
     color: #45a00a;
     border-color: #45a00a
 }
@@ -21576,7 +21576,7 @@ input[validate-cvv] + .empty-field-warning {
 }
 
 .option-card label {
-    background-image: url(/assets/images/svgIcons/radio.svg);
+    background-image: url(/project/app/assets/images/svgIcons/radio.svg);
     background-repeat: no-repeat;
     background-position: 4px;
     background-size: 32px;
@@ -21599,7 +21599,7 @@ input[validate-cvv] + .empty-field-warning {
 }
 
 .option-card input[type=radio]:checked + label {
-    background-image: url(/assets/images/svgIcons/radio-card-selected.svg);
+    background-image: url(/project/app/assets/images/svgIcons/radio-card-selected.svg);
     color: #45a00a;
     border-color: #45a00a
 }
@@ -23977,7 +23977,7 @@ a.progress-bar-danger:hover {
 }
 
 .fast-lane-option-card label {
-    background-image: url(/assets/images/svgIcons/radio.svg);
+    background-image: url(/project/app/assets/images/svgIcons/radio.svg);
     background-repeat: no-repeat;
     background-position: 4px;
     background-size: 32px;
@@ -24000,7 +24000,7 @@ a.progress-bar-danger:hover {
 }
 
 .fast-lane-option-card input[type=radio]:checked + label {
-    background-image: url(/assets/images/svgIcons/radio-card-selected.svg);
+    background-image: url(/project/app/assets/images/svgIcons/radio-card-selected.svg);
     color: #45a00a;
     border-color: #45a00a
 }
